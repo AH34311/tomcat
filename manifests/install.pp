@@ -1,7 +1,10 @@
 #install Tomcat on RHEL servers
-class tomcat::install {
+class tomcat::install (
 
-  package {['tomcat','tomcat-webapps']:
+  String $tomcat_package,
+({
+
+  package {$tomcat_package:
   ensure => installed,
 
   }
