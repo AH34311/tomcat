@@ -1,8 +1,9 @@
 ---
-tomcat::install::tomcat_package:	'tomcat'
-tomcat::config::tomcat_cfg_loaded:	1
-tomcat::config::tomcat_base:		'/var/lib/tomcat/'
-tomcat::config::java_home:		'/usr/lib/jvm/jre'
-tomcat::config::catalina_home:		'/usr/share/tomcat'
-tomcat::config::catalina_tmpdir:	'/var/cache/tomcat/temp'
-tomcat::config::security_manager:	false
+tomcat::install::tomcat_package: tomcat
+tomcat::config::tomcat_cfg_loaded: 1
+tomcat::config::tomcat_base: /var/lib/tomcat/
+tomcat::config::java_home: /usr/lib/jvm/jre
+tomcat::config::catalina_home: /usr/share/tomcat
+tomcat::config::catalina_tmpdir: /var/cache/tomcat/temp
+tomcat::config::security_manager: false
+
